@@ -19,7 +19,7 @@
     <!-- Libs -->
     <bouncycastle.version>1.83</bouncycastle.version>
     <guava.version>33.5.0-jre</guava.version>
-    <java.version>17</java.version>
+    <java.version>25</java.version>
     <junit.version>5.14.1</junit.version>
     <openpdf.version>3.0.0</openpdf.version>
     <pdfbox.version>3.0.6</pdfbox.version>
