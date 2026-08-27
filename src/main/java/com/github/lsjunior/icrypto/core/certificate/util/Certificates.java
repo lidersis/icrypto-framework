@@ -118,8 +118,10 @@ public abstract class Certificates {
 
     ZipEntry entry = inputStream.getNextEntry();
     while (entry != null) {
-      Certificate certificate = Certificates.toCertificate(inputStream);
-      certificates.put(entry.getName(), certificate);
+      if (!entry.isDirectory()) {
+        Certificate certificate = Certificates.toCertificate(inputStream);
+        certificates.put(entry.getName(), certificate);
+      }
       entry = inputStream.getNextEntry();
     }
 
